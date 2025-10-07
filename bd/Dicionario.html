@@ -1,0 +1,1182 @@
+
+
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>descricao</td>
+    <td>TEXT</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>status_categoria</td>
+    <td>ENUM('ativo', 'inativo')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='categorias_produto'>
+<tr><th colspan='7'>categorias_produto</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>produtos_id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>categoria_id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='clientes'>
+<tr><th colspan='7'>clientes</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>pessoa_id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>status_cliente</td>
+    <td>ENUM('ativo', 'inativo')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>linha_venda_id</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>documento_nacional</td>
+    <td>VARCHAR(14)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome_legal</td>
+    <td>VARCHAR(150)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome_comercial</td>
+    <td>VARCHAR(60)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>documento_estadual</td>
+    <td>VARCHAR(20)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>tipo_pessoa</td>
+    <td>ENUM('pj', 'pf')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>telefone</td>
+    <td>VARCHAR(16)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>email</td>
+    <td>VARCHAR(256)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>enderecos_id</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='enderecos'>
+<tr><th colspan='7'>enderecos</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>bairro</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>numero</td>
+    <td>VARCHAR(10)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>complemento</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>cep</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>municipios_codigo_ibge</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='fornecedores'>
+<tr><th colspan='7'>fornecedores</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>pessoa_id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>status_fornecedor</td>
+    <td>ENUM('ativo', 'inativo')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>documento_nacional</td>
+    <td>VARCHAR(14)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome_legal</td>
+    <td>VARCHAR(150)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome_comercial</td>
+    <td>VARCHAR(60)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>documento_estadual</td>
+    <td>VARCHAR(20)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>tipo_pessoa</td>
+    <td>ENUM('pj', 'pf')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>telefone</td>
+    <td>VARCHAR(16)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>email</td>
+    <td>VARCHAR(256)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>enderecos_id</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='itens_pedido_compra'>
+<tr><th colspan='7'>itens_pedido_compra</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>produtos_id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>pedidos_compra_id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>numero_item</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>qtd</td>
+    <td>DOUBLE(10,3)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>valor_unitario</td>
+    <td>DOUBLE(14,4)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>valor_total</td>
+    <td>DOUBLE(14,4)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='itens_pedido_venda'>
+<tr><th colspan='7'>itens_pedido_venda</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>produtos_id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>pedidos_venda_id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>numero_item</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>qtd</td>
+    <td>DOUBLE(10,3)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>porcento_desconto</td>
+    <td>DOUBLE(4,2)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>comissao_vendedor</td>
+    <td>DOUBLE(14,4)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>valor_unitario</td>
+    <td>DOUBLE(14,4)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>valor_total</td>
+    <td>DOUBLE(14,4)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>lucro</td>
+    <td>DOUBLE(14,4)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='linha_venda'>
+<tr><th colspan='7'>linha_venda</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>status_linha_venda</td>
+    <td>ENUM('ativo', 'inativo')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>descricao</td>
+    <td>TEXT</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>vendedor_id</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='marcas'>
+<tr><th colspan='7'>marcas</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>status_marca</td>
+    <td>ENUM('ativo', 'inativo')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='municipios'>
+<tr><th colspan='7'>municipios</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>codigo_ibge</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome</td>
+    <td>VARCHAR(60)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>uf_codigo_ibge</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='pedidos_compra'>
+<tr><th colspan='7'>pedidos_compra</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>data_hora_registro</td>
+    <td>DATE</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>valor_total</td>
+    <td>DOUBLE(12,4)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>fornecedore_id</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='pedidos_venda'>
+<tr><th colspan='7'>pedidos_venda</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>data_hora_registro</td>
+    <td>DATE</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>tipo_pagamento</td>
+    <td>ENUM('� vista', 'a prazo')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>valor_total</td>
+    <td>DOUBLE(12,4)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>comissao_total_vendedor</td>
+    <td>DOUBLE(12,4)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>cliente_id</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>vendedore_id</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='permissoes_sistema'>
+<tr><th colspan='7'>permissoes_sistema</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>status_permissao_sistema</td>
+    <td>ENUM('ativo', 'inativo')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>descricao</td>
+    <td>TEXT</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='permissoes_sistema'>
+<tr><th colspan='7'>permissoes_sistema</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>usuarios_id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>permissoes_sistema_id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='produtos'>
+<tr><th colspan='7'>produtos</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>status_produto</td>
+    <td>ENUM('ativo', 'inativo')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>qtd_estoque</td>
+    <td>DOUBLE(10,3)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>peso_liquido</td>
+    <td>DOUBLE(10,3)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>peso_bruto</td>
+    <td>DOUBLE(10,3)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>ncm</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>ean_13</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>qtd_minima_estoque</td>
+    <td>DOUBLE(10,3)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>unidade_medida</td>
+    <td>ENUM('un', 'cx')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>preco_custo</td>
+    <td>DOUBLE(14,4)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>preco_venda</td>
+    <td>DOUBLE(14,4)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>porcento_comissao_vendedor</td>
+    <td>DOUBLE(4,2)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>marcas_id</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='uf'>
+<tr><th colspan='7'>uf</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>codigo_ibge</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome</td>
+    <td>VARCHAR(30)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>sigla</td>
+    <td>CHAR(2)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='usuarios'>
+<tr><th colspan='7'>usuarios</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>status_usuario</td>
+    <td>ENUM('ativo', 'inativo')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome_completo</td>
+    <td>VARCHAR(150)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>login_usuario</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>senha</td>
+    <td>VARCHAR(250)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>email</td>
+    <td>VARCHAR(256)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<table id='vendedores'>
+<tr><th colspan='7'>vendedores</th></tr>
+<tr>
+    <th>Nombre</th>
+    <th>Tipo</th>
+    <th><abbr title='Primary Key'>PK</abbr></th>
+    <th><abbr title='Not Null'>NN</abbr></th>
+    <th><abbr title='Unique'>UQ</abbr></th>
+    <th><abbr title='Binary'>BIN</abbr></th>
+    <th>Comentario</th>
+</tr>
+<tr>
+    <td>pessoa_id</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>status_vendedor</td>
+    <td>ENUM('ativo', 'inativo')</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>cpf</td>
+    <td>VARCHAR(14)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome_completo</td>
+    <td>VARCHAR(150)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>nome_comercial</td>
+    <td>VARCHAR(60)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>rg</td>
+    <td>VARCHAR(20)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>dt_admissao</td>
+    <td>DATE</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>dt_demissao</td>
+    <td>DATE</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>telefone</td>
+    <td>VARCHAR(16)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>email</td>
+    <td>VARCHAR(256)</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+<tr>
+    <td>enderecos_id</td>
+    <td>INT</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td></td>
+</tr>
+</table>
+</body>
+</html>
